@@ -1,0 +1,16 @@
+.btn {
+text-decoration: none;
+}
+p {
+ font-size:32px;
+}
+input {
+ font-size:24px;
+}
+body {
+background-color:#d9ffd6;
+}
+.proverka {
+height: 40px;
+width: 200px;
+}

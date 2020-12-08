@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Тест по математике (500 баллов)</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="REDINFO.css">
+</head>
+<body>
+<p>Мальчик пошел с отцом в тир. Отец купил ему 10 пулек.</p>
+<p>В дальнейшем отец за каждый промах отбирал у сына одну пульку,а за каждое попадание давал одну дополнительную пульку.</p>
+<p>Сын выстрелил 55 раз, после чего пульки у него кончились. Сколько раз он попал?</p>
+	<p><input type="text" id="z_1"></p>
+<button class="proverka" onclick="proverit();">Проверить</button>
+<div id="rezultat"></div>
+<script>
+function proverit(){
+pr_otv_zadachi_1 = 50;
+otv_uch_1 = document.getElementById('z_1').value;
+ball = 0;
+if(otv_uch_1 == pr_otv_zadachi_1){
+ball +=1;
+}
+vsego_zadach = 1;
+procent_vip = ball/vsego_zadach * 100;
+document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script>
+     <a href="index.html" class="btn">Вернуться в начальный экран</a>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Тест по информатике (1000 баллов)</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="REDINFO.css">
+</head>
+<body>
+<p>В таблице приведены запросы к поисковому серверу.</p>
+<p> Расположите обозначения запросов в порядке убывания количества страниц, которые найдет поисковый сервер по каждому запросу.</p>
+<p>Для обозначения логической операции «ИЛИ» в запросе используется символ |, а для логической операции «И» — &</p>
+<p>а) Конституция & Россия & Франция</p>
+<p>б) Конституция | Франция | Россия</p>
+<p>в) Конституция & Россия</p>
+<p>г) Конституция | Франция</p>
+<input type="text" id="z_1"></p>
+<button class="proverka" onclick="proverit();">Проверить</button>
+<div id="rezultat"></div>
+<script>
+function proverit(){
+pr_otv_zadachi_1 = "бгва";
+otv_uch_1 = document.getElementById('z_1').value;
+ball = 0;
+if(otv_uch_1 == pr_otv_zadachi_1){
+ball +=1;
+}
+vsego_zadach = 1;
+procent_vip = ball/vsego_zadach * 100;
+document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script>
+     <a href="index.html" class="btn">Вернуться в начальный экран</a>
+</body>
+</html>

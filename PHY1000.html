@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Тест по физике (1000 баллов)</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="REDINFO.css">
+</head>
+<body>
+<p>Под действием постоянной силы тело массой 200 грамм за третью секунду движения прошло путь, равный 1,8 метров, а за четвёртую секунду - путь, равный 2,4 метра.
+  Определите ускорение и силу, сообщающую телу ускорение.
+Ответ:<input type="text" id="z_1"></p>
+<button onclick="proverit();">Проверить</button>
+<div id="rezultat"></div>
+<script>
+function proverit(){
+pr_otv_zadachi_1 = "1.2 м/с^2;0,24 H";
+otv_uch_1 = document.getElementById('z_1').value;
+ball = 0;
+if(otv_uch_1 == pr_otv_zadachi_1){
+ball +=1;
+}
+vsego_zadach = 1;
+procent_vip = ball/vsego_zadach * 100;
+document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script>
+     <a href="index.html" class="btn">Вернуться в начальный экран</a>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Тест по информатике (500 баллов)</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="REDINFO.css">
+</head>
+<body>
+<p>Дан исполнитель: Чебурек</p>
+<p>Команды: 1) умножить на 3 (команда "1");
+2)Вычесть 5 (Команда "2") </p>
+<p>Задание: записать последовательность команд, выполнив за 5 команд перевод 8 --> 36<input type="text" id="z_1"></p>
+<button class="proverka" onclick="proverit();">Проверить</button>
+<div id="rezultat"></div>
+<script>
+function proverit(){
+pr_otv_zadachi_1 = 21211;
+otv_uch_1 = document.getElementById('z_1').value;
+ball = 0;
+if(otv_uch_1 == pr_otv_zadachi_1){
+ball +=1;
+}
+vsego_zadach = 1;
+procent_vip = ball/vsego_zadach * 100;
+document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script>
+     <a href="index.html" class="btn">Вернуться в начальный экран</a>
+</body>
+</html>

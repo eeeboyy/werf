@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Тест по математике (100 баллов)</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="REDINFO.css">
+</head>
+<body>
+<p>Если дату 10 февраля 2001 года записать в виде 10.02.2001, а затем убрать точки,
+то получится палиндром (т.е. число, читающееся слева направо и справа налево одинаково).</p>
+<p>Найдите ближайшую к 10.02.2001 дату, обладающую тем же свойством. Рассмотрите два случая:</p>
+<p>1) требуемая дата еще не наступила,</p>
+<p>2) требуемая дата уже прошла.</p>
+<p>Ответ обосновать(устно).</p>
+<p><input type="text" id="z_1"></p>
+<button class="proverka" onclick="proverit();">Проверить</button>
+<div id="rezultat"></div>
+<script>
+function proverit(){
+pr_otv_zadachi_1 = "20 февраля 2002;29 ноября 1192 года"
+otv_uch_1 = document.getElementById('z_1').value;
+ball = 0;
+if(otv_uch_1 == pr_otv_zadachi_1){
+ball +=1;
+}
+vsego_zadach = 1;
+procent_vip = ball/vsego_zadach * 100;
+document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script>
+     <a href="index.html" class="btn">Вернуться в начальный экран</a>
+</body>
+</html>

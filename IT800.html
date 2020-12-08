@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Тест по информатике (800 баллов)</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="REDINFO.css">
+</head>
+<body>
+<p>Алёша, Боря и Гриша нашли в земле старинный сосуд. Рассматривая его, каждый сделал по 2 вывода:</p>
+<p>Алёша: "Это греческий сосуд и изготовлен в V веке"</p>
+<p>Боря: "Это финикийский сосуд и изготовлен в III веке"</p>
+<p>Гриша: "Это не греческий сосуд и изготовлен в IV веке"</p>
+<p>Историк сказал ребятам, что каждый прав только в одном суждении. Кокой это сосуд и в каком веке он изготовлен?<input type="text" id="z_1"></p>
+<button class="proverka" onclick="proverit();">Проверить</button>
+<div id="rezultat"></div>
+<script>
+function proverit(){
+pravda = "это финикийский сосуд и изготовлен в V веке";
+otv_uch_1 = document.getElementById('z_1').value;
+ball = 0;
+if(otv_uch_1 == pravda){
+ball +=1;
+}
+vsego_zadach = 1;
+procent_vip = ball/vsego_zadach * 100;
+document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script>
+     <a href="index.html" class="btn">Вернуться в начальный экран</a>
+</body>
+</html>

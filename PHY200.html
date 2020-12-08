@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Тест по физике (200 баллов)</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="REDINFO.css">
+</head>
+<body>
+<p>КПД механизмов</p>
+<p>С помощью неподвижного блока груз массой 100 кг поднят на высоту 5 метров. Определите совергённую при этом работу, если КПД равен 70%.</p>
+<p>Ответ округлите до 1 кДж:<input type="text" id="z_1"></p>
+<button class = "proverka" onclick="proverit();">Проверить</button>
+<div id="rezultat"></div>
+<script>
+function proverit(){
+pr_otv_zadachi_1 = "7 кДж";
+otv_uch_1 = document.getElementById('z_1').value;
+ball = 0;
+if(otv_uch_1 == pr_otv_zadachi_1){
+ball +=1;
+}
+vsego_zadach = 1;
+procent_vip = ball/vsego_zadach * 100;
+document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script>
+     <a href="index.html" class="btn">Вернуться в начальный экран</a>
+</body>
+</html>

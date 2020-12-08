@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Тест по русскому языку (200 баллов)</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="REDINFO.css">
+</head>
+<body>
+<p>Выполните задания теста:</p>
+<p>В каком из четырёх слов отсутствует ошибка?<input type="text" id="z_1"></p>
+<p>1)ростовщик</p>
+<p>2)экспериментатор</p>
+<p>3)будующие</p>
+<p>4)антрапоморфный</p>
+<button class="proverka" onclick="proverit();">Проверить</button>
+<div id="rezultat"></div>
+<script>
+function proverit(){
+pr_otv_zadachi_1 = 2;
+otv_uch_1 = document.getElementById('z_1').value;
+ball = 0;
+if(otv_uch_1 == pr_otv_zadachi_1){
+ball +=1;
+}
+vsego_zadach = 1;
+procent_vip = ball/vsego_zadach * 100;
+document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script>
+     <a href="index.html" class="btn">Вернуться в начальный экран</a>
+</body>
+</html>

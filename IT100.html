@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Тест по информатике (100 баллов)</title>
+	<meta charset="UTF-8" dir="ltr">
+<meta name="description" content="My teaching Tutorial">
+<meta name="keywords" content="HTML,CSS,JavaScript,PHP">
+<meta name="author" content="Vova Patenko">
+<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="REDINFO.css">
+</head>
+<body>
+<p>
+Текст, набранный на компьютере, содержит 11 страниц, на каждой странице 40 строк, а в каждой строке по 64 символа. Определите информационный объем текста, если один символ кодируется 16 битами.</p>
+<p>
+1) 1800 бит
+2) 55 Кбайт
+3) 524 байта
+4) 0,5 Кбайта
+</p>
+<p>Ответ:<input type="text" id="z_1"></p>
+<button class="proverka" onclick="proverit();">Проверить</button>
+<div id="rezultat"></div>
+<script>
+function proverit(){
+pr_otv_zadachi_1 = 2;
+otv_uch_1 = document.getElementById('z_1').value;
+ball = 0;
+if(otv_uch_1 == pr_otv_zadachi_1){
+ball +=1;
+}
+vsego_zadach = 1;
+procent_vip = ball/vsego_zadach * 100;
+document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script>
+     <a href="index.html" class="btn">Вернуться в начальный экран</a>
+</body>
+</html>
