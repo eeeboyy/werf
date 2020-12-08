@@ -18,7 +18,6 @@ margin-left: 100px;
 font-size: 30px;
 }
 #f {
-background-color: #9400d3;
-text-align: center;
-font-size: 32px;
+    color: Darkviolet;
+    text-align: center;
 }
