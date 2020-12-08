@@ -1,3 +1,7 @@
+.fragers {
+ background-color: #FF33FF; 
+ text-align: right;
+}
 a {
 text-decoration: none;
 }
@@ -16,8 +20,4 @@ background: #99FF99;
 margin-top: 50px;
 margin-left: 100px;
 font-size: 30px;
-}
-.f {
-color: #FF33FF;
-text-align: center;
 }
