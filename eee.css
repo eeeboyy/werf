@@ -16,7 +16,7 @@ min-height: 15px;
 max-height: 20px;
 min-width: 400px;
 max-width: 3000px;
-font-size: 1.6em;
+font-size: 1.3vw;
 font-family: Noto Sans;
 }
 #nana {
@@ -40,15 +40,22 @@ border-radius: 1em;
 background: #99FF99;
 }
 .align {
-margin-top: 6vh;
-margin-left: 6vw;
-font-size: 25px;
 text-align: center;
+width: 7vw;
+height: 2vh;
+font-size: 1.2em;
+margin-top: 6vh;
+margin-left: 3.5vw;
 }
 .write {
-min-width: 9vw;
+min-width: 9px;
+max-width: 3000px;
+min-height: 2px;
 max-width: 3000px;
 margin-top: 6vh;
 margin-left: 3.5vw;
-font-size: 20px;
+text-align: center;
+width: 7vw;
+height: 2vh;
+font-size: 1.2em;
 }
