@@ -42,12 +42,12 @@ background: #99FF99;
 .align {
 margin-top: 6vh;
 margin-left: 6vw;
-font-size: 2em;
+font-size: 1.5vw;
 }
 .write {
 min-width: 10vw;
 max-width: 3000px;
 margin-top: 6vh;
 margin-left: 3.5vw;
-font-size: 1.7em;
+font-size: 1.5vw;
 }
